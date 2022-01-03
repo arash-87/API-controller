@@ -14,3 +14,7 @@ Download .whl file
 py -m pip install the-address-of-MikroTik-API
 
 Make sure that python file is set on Python to run
+
+Move the script to a directory with all the needed inputs
+
+Run the script on a terminal like PowerShell or CMD with administartive privilege
