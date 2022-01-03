@@ -5,7 +5,7 @@
 
 # Requirements:
 # Run this script with Administrator privilege.
-# Port 8729 for site in new portal and 8728 for site in old portal must be open on the gateways
+# Port 8729 for site in new portal and 8728 for sites with insuecure connection must be open on the gateways
 # Files must be in the same location of the script file
 
 import routeros_api
@@ -188,6 +188,8 @@ while True:
     print("                    ------------------------------------------------")
     
     value = input("\n> Enter a number to apply change for .... :  ")
+	
+######################## Inputs #############################	
     
     if value == '1':
         filepath = '.\ip-list.txt'
@@ -196,7 +198,7 @@ while True:
             
     elif value == '2':
         #filepath = '.\ip-list2.txt'
-        ssl = False # If connection is not based SSL use port 8728 for sites on old portal
+        ssl = False # If connection is not based SSL use port 8728 
         filechk(filepath, ssl)  
 
     elif value == '3':
